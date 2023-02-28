@@ -91,7 +91,7 @@ export default function Navbar() {
             to={tab.name.toLowerCase()}
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-100}
             onClick={() => setIsMenu(false)}
           >
             {tab.name}
@@ -107,7 +107,7 @@ export default function Navbar() {
             to={tab.name.toLowerCase()}
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-100}
             duration={500}
           >
             {tab.name}

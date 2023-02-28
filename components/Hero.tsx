@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function Hero() {
   const [browser, setBrowser] = React.useState('chrome');
@@ -29,13 +30,19 @@ function Hero() {
           }}
         />
         <div className="absolute z-10 flex flex-col items-center justify-center space-y-4 bg-transparent">
-          <Image
-            src="/logofill.png"
-            width={175}
-            height={175}
-            alt="Logo"
-            className="z-20 transition-all duration-1000 hover:rotate-[360deg]"
-          />
+          <motion.div
+            initial={{ rotate: 0 }}
+            animate={{ rotate: 360 }}
+            transition={{ duration: 1 }}
+          >
+            <Image
+              src="/logofill.png"
+              width={175}
+              height={175}
+              alt="Logo"
+              className="z-20 transition-all duration-1000 hover:rotate-[360deg]"
+            />
+          </motion.div>
           <h1 className="text-6xl font-black uppercase text-white lg:text-8xl">
             Geeth
           </h1>
