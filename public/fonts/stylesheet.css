@@ -32,3 +32,10 @@
   font-weight: 600;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}

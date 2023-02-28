@@ -67,13 +67,13 @@ function Projects() {
       <div className="flex flex-row items-center justify-center space-y-4">
         <div className="flex w-full flex-col items-center justify-center">
           <div className="flex w-full flex-row items-center justify-between space-x-4">
-            <div className="h-[120px] w-[1px] -rotate-180 transform animate-pulse bg-transparent" />
-            <div className="h-[120px] w-[1px] -rotate-180 transform animate-pulse bg-gradient-to-t from-transparent to-primary" />
+            <div className="h-[120px] w-[1px] -rotate-180 transform bg-transparent" />
+            <div className="h-[120px] w-[1px] -rotate-180 transform bg-gradient-to-t from-transparent to-primary" />
           </div>
-          <div className="h-[1px] w-full animate-pulse bg-primary" />
+          <div className="h-[1px] w-full bg-primary" />
           <div className="flex w-full flex-row items-center justify-between space-x-4">
-            <div className="h-[60px] w-[1px] -rotate-180 transform animate-pulse bg-gradient-to-t from-primary to-transparent" />
-            <div className="h-[60px] w-[1px] -rotate-180 transform animate-pulse bg-transparent" />
+            <div className="h-[60px] w-[1px] -rotate-180 transform bg-gradient-to-t from-primary to-transparent" />
+            <div className="h-[60px] w-[1px] -rotate-180 transform bg-transparent" />
           </div>
         </div>
         <div className="flex w-full flex-row items-start justify-between space-x-4"></div>

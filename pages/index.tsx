@@ -5,6 +5,9 @@ import Head from 'next/head';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Stack from '@/components/Stack';
+import Pricing from '@/components/Pricing';
+import CTA from '@/components/CTA';
+import Footer from '@/components/Footer';
 
 function Home() {
   return (
@@ -16,7 +19,6 @@ function Home() {
         transition={{ duration: 0.5 }}
         className="absolute top-0 left-0 -z-20 h-full w-full bg-[url(/blob.svg)] bg-cover bg-no-repeat"
       />
-      <div className="absolute top-0 left-0 -z-10 h-full w-full bg-[url(/blob2.svg)] bg-cover bg-center bg-no-repeat opacity-50" />
       <Head>
         <title>Geeth | Developer / Designer</title>
       </Head>
@@ -24,6 +26,9 @@ function Home() {
       <Hero />
       <Projects />
       <Stack />
+      <Pricing />
+      <CTA />
+      <Footer />
     </div>
   );
 }

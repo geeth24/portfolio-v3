@@ -38,18 +38,18 @@ const stack = [
       <SiTailwindcss className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
     ),
   },
-  {
-    name: 'React Native',
-    icon: (
-      <SiReact className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
-    ),
-  },
-  {
-    name: 'Swift',
-    icon: (
-      <SiSwift className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
-    ),
-  },
+  // {
+  //   name: 'React Native',
+  //   icon: (
+  //     <SiReact className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+  //   ),
+  // },
+  // {
+  //   name: 'Swift',
+  //   icon: (
+  //     <SiSwift className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+  //   ),
+  // },
   {
     name: 'Firebase',
     icon: (
@@ -116,6 +116,9 @@ function Stack() {
             />
           </motion.div>
         </div>
+      </div>
+      <div className="flex flex-col items-center justify-center space-x-4">
+        <div className="h-[200px] w-[1px] bg-gradient-to-b from-transparent to-secondary" />
       </div>
     </div>
   );
