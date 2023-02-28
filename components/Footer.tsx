@@ -16,8 +16,8 @@ function Footer() {
           className="flex items-center"
         >
           <Image
-            src="/logofill.png"
-            className="h-10 w-10"
+            src="/logo.svg"
+            className="mb-3 h-10 w-10 transition-all duration-1000 hover:rotate-[360deg] sm:mb-0"
             alt="Dumka Logo"
             width={140}
             height={40}
