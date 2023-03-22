@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function CTA() {
   return (
-    <div id="contact" className="">
+    <div className="">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden px-6 py-24 text-center sm:rounded-3xl sm:px-16">
           <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">

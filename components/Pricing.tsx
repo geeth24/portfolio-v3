@@ -1,4 +1,5 @@
 import { CheckIcon } from '@heroicons/react/20/solid';
+import { Link } from 'react-scroll';
 
 const tiers = [
   {
@@ -77,17 +78,33 @@ export default function Pricing() {
                       ))}
                     </ul>
                   </div>
-                  <a
-                    href={tier.href}
-                    aria-describedby={tier.id}
-                    className="mt-8 block rounded-md bg-background px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-background/50"
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    className="mt-8 block cursor-pointer rounded-md bg-background px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-background/50"
                   >
                     Let&apos;s Talk
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
           </div>
+        </div>
+        <div className="mx-auto  mt-8 flex h-full w-screen  max-w-screen-xl flex-row items-center justify-center space-y-4 bg-transparent px-4 lg:mt-16">
+          <div className="flex w-full flex-col items-center justify-center">
+            <div className="flex w-full flex-row items-center justify-between space-x-4">
+              <div className="h-[120px] w-[1px] -rotate-180 transform bg-transparent" />
+              <div className="h-[120px] w-[1px] -rotate-180 transform bg-gradient-to-t from-transparent to-primary" />
+            </div>
+            <div className="h-[1px] w-full bg-primary" />
+            <div className="flex w-full flex-row items-center justify-between space-x-4">
+              <div className="h-[60px] w-[1px] -rotate-180 transform bg-gradient-to-t from-primary to-transparent" />
+              <div className="h-[60px] w-[1px] -rotate-180 transform bg-transparent" />
+            </div>
+          </div>
+          <div className="flex w-full flex-row items-start justify-between space-x-4"></div>
         </div>
       </div>
     </div>

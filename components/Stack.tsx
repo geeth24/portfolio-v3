@@ -9,6 +9,7 @@ import {
   SiTailwindcss,
   SiFigma,
   SiAdobephotoshop,
+  SiSketch,
 } from 'react-icons/si';
 
 import { motion } from 'framer-motion';
@@ -17,55 +18,61 @@ const stack = [
   {
     name: 'TypeScript',
     icon: (
-      <SiTypescript className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+      <SiTypescript className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
     ),
   },
   {
     name: 'React',
     icon: (
-      <SiReact className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+      <SiReact className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
     ),
   },
   {
     name: 'Next.js',
     icon: (
-      <SiNextdotjs className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+      <SiNextdotjs className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
     ),
   },
   {
     name: 'Tailwind CSS',
     icon: (
-      <SiTailwindcss className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+      <SiTailwindcss className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
     ),
   },
   // {
   //   name: 'React Native',
   //   icon: (
-  //     <SiReact className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+  //     <SiReact className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
   //   ),
   // },
   // {
   //   name: 'Swift',
   //   icon: (
-  //     <SiSwift className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+  //     <SiSwift className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
   //   ),
   // },
   {
     name: 'Firebase',
     icon: (
-      <SiFirebase className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
-    ),
-  },
-  {
-    name: 'Figma',
-    icon: (
-      <SiFigma className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+      <SiFirebase className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
     ),
   },
   {
     name: 'Photoshop',
     icon: (
-      <SiAdobephotoshop className="text-8xl text-white transition-all duration-500 group-hover:text-secondary" />
+      <SiAdobephotoshop className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
+    ),
+  },
+  {
+    name: 'Figma',
+    icon: (
+      <SiFigma className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
+    ),
+  },
+  {
+    name: 'Sketch',
+    icon: (
+      <SiSketch className="text-4xl text-white transition-all duration-500 group-hover:text-secondary" />
     ),
   },
 ];
@@ -81,40 +88,15 @@ function Stack() {
         <p className="text-3xl font-black uppercase text-white">
           The stack I use
         </p>
-        <div className="item-start flex w-full flex-col justify-between space-x-4 md:flex-row md:items-center">
-          <div className="grid grid-cols-3 gap-8 md:grid-cols-4 lg:grid-cols-5">
-            {stack.map((item) => (
-              <div
-                key={item.name}
-                className="group flex flex-col items-center justify-center space-y-4"
-              >
-                <div className="text-xl text-white group-hover:text-secondary">
-                  {item.icon}
-                </div>
-                <p className="text-md font-light text-white transition-all duration-500 group-hover:text-secondary lg:text-lg">
-                  {item.name}
-                </p>
+        <div className="mt-10 grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:grid-cols-5">
+          {stack.map((item) => (
+            <div className="flex flex-row items-center" key={item.name}>
+              <div className=" mr-2 flex items-center justify-center rounded-full">
+                {item.icon}
               </div>
-            ))}
-          </div>
-          <motion.div
-            className="h-96 w-96"
-            initial={{ y: 20 }}
-            animate={{ y: 0 }}
-            transition={{
-              duration: 1,
-              repeat: Infinity,
-              repeatType: 'reverse',
-            }}
-          >
-            <Image
-              src="/stack.svg"
-              alt="Code"
-              width={500}
-              height={500}
-              className="z-0 h-full w-full -skew-y-12"
-            />
-          </motion.div>
+              <p className="text-lg font-bold text-white">{item.name}</p>
+            </div>
+          ))}
         </div>
       </div>
       <div className="flex flex-col items-center justify-center space-x-4">

@@ -41,7 +41,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 z-50  flex w-full flex-wrap justify-between py-[13px] px-[16px] text-[#222222] backdrop-blur-xl md:px-[4vw] lg:-mt-5 lg:pt-[35px] ${
+      className={`fixed top-0 left-0 z-50  flex w-full flex-wrap justify-between py-[13px] px-[16px] text-[#222222] backdrop-blur-3xl md:px-[4vw] lg:-mt-5 lg:pt-[35px] ${
         isMenu
           ? 'h-screen items-start bg-transparent'
           : 'h-auto items-center bg-transparent'
@@ -73,7 +73,7 @@ export default function Navbar() {
         />
       </div>
       <div
-        className={`fixed top-0 left-0 flex h-screen w-screen flex-col gap-[40px] px-[59px] pt-[100px]  text-center text-[45px] font-light uppercase text-primary transition-all duration-300 lg:hidden lg:-translate-x-[78px] lg:px-0 ${
+        className={`fixed top-0 left-0 flex h-screen w-screen flex-col justify-center gap-[40px] px-[59px]  text-center text-[45px] font-light uppercase text-primary transition-all duration-300 lg:hidden lg:-translate-x-[78px] lg:px-0 ${
           !isMenu && 'pointer-events-none -z-50 -translate-y-20 opacity-0'
         } ${isMenu && '-z-10'}`}
       >

@@ -6,8 +6,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Stack from '@/components/Stack';
 import Pricing from '@/components/Pricing';
-import CTA from '@/components/CTA';
+// import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
+import Contact from '@/components/Contact';
 
 function Home() {
   return (
@@ -27,7 +28,8 @@ function Home() {
       <Projects />
       <Stack />
       <Pricing />
-      <CTA />
+      {/* <CTA /> */}
+      <Contact />
       <Footer />
     </div>
   );
