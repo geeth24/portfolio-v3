@@ -13,7 +13,7 @@ const tiers = [
     name: 'Full',
     id: 'tier-full',
     href: '#',
-    description: 'The Full Package',
+    description: 'The Complete Package',
     features: [
       'Logo Design',
       'Landing Page Design',
@@ -46,7 +46,7 @@ export default function Pricing() {
               {tiers.map((tier) => (
                 <div
                   key={tier.id}
-                  className="flex flex-col justify-between rounded-lg bg-gradient-to-br from-background to-secondary p-8 shadow-xl ring-1 ring-primary/10 sm:p-10"
+                  className="flex flex-col justify-between rounded-lg bg-gradient-to-br from-transparent/10 to-secondary/50 p-8 shadow-xl ring-1 ring-primary/10 sm:p-10"
                 >
                   <div>
                     <h3
@@ -56,7 +56,7 @@ export default function Pricing() {
                       {tier.name}
                     </h3>
                     <div className="mt-4 flex items-baseline gap-x-2">
-                      <span className="text-5xl font-bold tracking-wide text-primary">
+                      <span className="text-5xl font-bold tracking-wide text-white">
                         Let&apos;s Talk
                       </span>
                     </div>

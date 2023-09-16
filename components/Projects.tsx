@@ -4,14 +4,14 @@ import React from 'react';
 
 const projects = [
   {
+    name: 'MyPanchang',
+    image: '/mypanchang.svg',
+    url: 'https://mypanchang.app/',
+  },
+  {
     name: 'Dumka',
     image: '/dumka.svg',
     url: 'https://dumkacalgary.com/',
-  },
-  {
-    name: 'Pista Express',
-    image: '/pistaexpress.svg',
-    url: 'https://pistaexpress.com/',
   },
   {
     name: 'Pista House Irving',
