@@ -8,7 +8,7 @@ const tiers = [
     href: '#',
     description: 'The Design Package',
     features: ['Logo Design', 'Landing Page Design'],
-    price: 1500,
+    price: 1999,
   },
   {
     name: 'Design + Development',
@@ -21,7 +21,7 @@ const tiers = [
       'Website Design',
       'Website Development',
     ],
-    price: 3500,
+    price: 4999,
   },
 ];
 
