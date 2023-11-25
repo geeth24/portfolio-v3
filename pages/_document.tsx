@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/logofill.png" />
       </Head>
-      <body className="bg-background">
+      <body className="bg-gradient-to-b from-primary via-secondary/60 to-secondary">
         <Main />
         <NextScript />
       </body>

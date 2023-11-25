@@ -24,7 +24,7 @@ function Footer() {
           />
         </RLink>
 
-        <ul className="flex flex-wrap items-center text-sm uppercase text-primary">
+        <ul className="flex flex-wrap items-center text-sm  text-white">
           <li>
             <RLink
               to="projects"
@@ -76,22 +76,9 @@ function Footer() {
         </ul>
       </div>
 
-      <hr className="my-3 border-primary sm:mx-auto lg:my-4" />
-      <span className="block text-sm text-primary sm:text-center">
+      <hr className="my-3 border-white sm:mx-auto lg:my-4" />
+      <span className="block text-sm text-white sm:text-center">
         © {new Date().getFullYear()} Geeth Gunnampalli. All rights reserved.
-      </span>
-      <span className="block text-sm text-primary sm:text-center">
-        Built with{' '}
-        <Link href="https://nextjs.org/" className="hover:underline">
-          <SiNextdotjs className="inline-block h-4 w-4" />
-        </Link>{' '}
-        <Link href="https://tailwindcss.com/" className="hover:underline">
-          <SiTailwindcss className="inline-block h-4 w-4" />
-        </Link>{' '}
-        <Link href="https://www.framer.com/motion/" className="hover:underline">
-          <SiFramer className="inline-block h-4 w-4" />
-        </Link>{' '}
-        by Me :)
       </span>
     </footer>
   );

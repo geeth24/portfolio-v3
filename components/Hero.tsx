@@ -23,11 +23,7 @@ function Hero() {
           width={100}
           height={100}
           alt="Grid"
-          className=" z-0  h-screen w-screen object-cover object-center "
-          style={{
-            //if safari reduce the opacity of the grid
-            opacity: browser === 'safari' ? 0.4 : 1,
-          }}
+          className="z-0  h-screen w-screen object-cover object-center "
         />
         <div className="absolute z-10 flex flex-col items-center justify-center space-y-4 bg-transparent">
           <motion.div
@@ -36,7 +32,7 @@ function Hero() {
             transition={{ duration: 1 }}
           >
             <Image
-              src="/logofill.png"
+              src="/logo-white.png"
               width={175}
               height={175}
               alt="Logo"
@@ -44,13 +40,13 @@ function Hero() {
               loading="eager"
             />
           </motion.div>
-          <h1 className="text-6xl font-black uppercase text-white lg:text-8xl">
+          <h1 className="text-6xl font-semibold tracking-tighter text-white lg:text-8xl">
             Geeth
           </h1>
-          <h3 className=" text-3xl font-black uppercase text-white md:text-4xl lg:text-6xl">
+          <h3 className="text-3xl font-light tracking-tight text-white md:text-4xl lg:text-6xl">
             Developer / Designer
           </h3>
-          <p className="text-lg font-light text-white md:text-3xl lg:text-4xl">
+          <p className="text-lg font-light tracking-normal text-white md:text-3xl lg:text-4xl">
             Crafting the web through design and code.
           </p>
           <div className="relative flex flex-col items-center justify-center space-x-4">

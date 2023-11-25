@@ -33,30 +33,25 @@ function Projects() {
     >
       <div className="flex flex-col items-center justify-center space-y-4">
         <div className="flex flex-col items-center justify-center space-y-4">
-          <h1 className="text-xl font-thin uppercase text-white">Projects</h1>
-          <p className="text-3xl font-black uppercase text-white">
-            Recent projects
-          </p>
-          <div className="flex flex-col items-center justify-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4">
+          <div className="text-center mb-8">
+            <h1 className="text-xl font-semibold  text-white">Projects</h1>
+            <p className="text-3xl font-light  text-white">Recent projects</p>
+          </div>
+          <div className="flex flex-col items-center justify-center space-y-8 lg:flex-row lg:space-y-0 lg:space-x-8">
             {projects.map((project) => (
-              <div
+              <Link
                 key={project.name}
-                className="group flex h-16 flex-col items-center justify-center rounded-lg bg-gradient-to-br from-background to-secondary p-0.5 shadow-2xl transition-all duration-500"
+                href={project.url}
+                className="group bg-gradient-to-br from-transparent/10 to-secondary/50 h-20 px-8 rounded-full shadow-2xl shadow-secondary/100 transition-all duration-500"
               >
-                <Link
-                  key={project.name}
-                  className="flex h-full flex-col items-center justify-center space-y-4 rounded-lg  bg-gradient-to-br from-background to-background/50 py-1 px-10 transition-all duration-500"
-                  href={project.url}
-                >
-                  <Image
-                    src={project.image}
-                    width={175}
-                    height={175}
-                    alt="Project"
-                    className="h-full w-40 transition-all duration-500 group-hover:scale-125 group-hover:transform"
-                  />
-                </Link>
-              </div>
+                <Image
+                  src={project.image}
+                  width={175}
+                  height={175}
+                  alt="Project"
+                  className="h-full w-40 transition-all duration-500 group-hover:scale-110"
+                />
+              </Link>
             ))}
           </div>
           <p className="text-xl font-thin italic text-white">
@@ -68,11 +63,11 @@ function Projects() {
         <div className="flex w-full flex-col items-center justify-center">
           <div className="flex w-full flex-row items-center justify-between space-x-4">
             <div className="h-[120px] w-[1px] -rotate-180 transform bg-transparent" />
-            <div className="h-[120px] w-[1px] -rotate-180 transform bg-gradient-to-t from-transparent to-primary" />
+            <div className="h-[120px] w-[1px] -rotate-180 transform bg-gradient-to-t from-transparent to-white" />
           </div>
-          <div className="h-[1px] w-full bg-primary" />
+          <div className="h-[1px] w-full bg-white" />
           <div className="flex w-full flex-row items-center justify-between space-x-4">
-            <div className="h-[60px] w-[1px] -rotate-180 transform bg-gradient-to-t from-primary to-transparent" />
+            <div className="h-[60px] w-[1px] -rotate-180 transform bg-gradient-to-t from-white to-transparent" />
             <div className="h-[60px] w-[1px] -rotate-180 transform bg-transparent" />
           </div>
         </div>

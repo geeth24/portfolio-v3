@@ -7,13 +7,13 @@ interface MenuButtonProps {
 function MenuButton({ isMenu, setIsMenu }: MenuButtonProps) {
   return (
     <div
-      className="relative z-50 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-gradient-to-bl from-primary via-secondary to-background lg:hidden"
+      className="relative z-50 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-gradient-to-bl from-white to-secondary lg:hidden"
       onClick={() => {
         setIsMenu(!isMenu);
       }}
     >
       <div
-        className={`group z-50  flex h-8 w-8 cursor-pointer flex-col items-center  justify-center gap-[3px]  rounded-full bg-black text-white transition-all duration-300 active:bg-black lg:hidden lg:hover:bg-black ${
+        className={`group z-50  flex h-8 w-8 cursor-pointer flex-col items-center  justify-center gap-[3px]  rounded-full bg-black hover:bg-background/50 text-white transition-all duration-300 active:bg-black lg:hidden lg:hover:bg-black ${
           isMenu && ' bg-black'
         }`}
       >

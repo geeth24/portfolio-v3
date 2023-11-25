@@ -132,7 +132,7 @@ export default function Contact() {
                   id="first-name"
                   autoComplete="given-name"
                   placeholder="Geeth"
-                  className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 bg-white/5 placeholder-white py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                 />
@@ -152,7 +152,7 @@ export default function Contact() {
                   id="last-name"
                   autoComplete="family-name"
                   placeholder="Gunnampalli"
-                  className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 bg-white/5 placeholder-white py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                 />
@@ -172,7 +172,7 @@ export default function Contact() {
                   id="email"
                   autoComplete="email"
                   placeholder="hello@geethg.com"
-                  className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 bg-white/5 placeholder-white py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -191,7 +191,7 @@ export default function Contact() {
                   name="handle"
                   id="handle"
                   placeholder="IG: @geethgs7 | TW: @geethgs7"
-                  className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 bg-white/5 placeholder-white py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
                   value={handle}
                   onChange={(e) => setHandle(e.target.value)}
                 />
@@ -209,8 +209,7 @@ export default function Contact() {
                   name="message"
                   id="message"
                   rows={4}
-                  className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
-                  defaultValue={'Hello!, I would like to discuss about...'}
+                  className="block w-full rounded-md border-0 bg-white/5 placeholder-white py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-secondary sm:text-sm sm:leading-6"
                   placeholder="Hello!, I would like to discuss about..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -221,7 +220,7 @@ export default function Contact() {
           <div className="mt-8 flex justify-end">
             <button
               type="submit"
-              className="block rounded-md bg-background px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-background/50"
+              className="block rounded-full bg-background px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-background/50"
             >
               {isSubmitting ? (
                 <div className="flex items-center justify-center">

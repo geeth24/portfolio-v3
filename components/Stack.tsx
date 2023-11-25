@@ -84,10 +84,8 @@ function Stack() {
       className="mx-auto h-full w-screen max-w-screen-xl bg-transparent px-4"
     >
       <div className="flex flex-col items-start justify-center space-y-4">
-        <h1 className="text-xl font-thin uppercase text-white">Stack</h1>
-        <p className="text-3xl font-black uppercase text-white">
-          The stack I use
-        </p>
+        <h1 className="text-xl font-semibold  text-white">Stack</h1>
+        <p className="text-3xl font-light  text-white">The Stack I Use</p>
         <div className="mt-10 grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:grid-cols-5">
           {stack.map((item) => (
             <div className="flex flex-row items-center" key={item.name}>
