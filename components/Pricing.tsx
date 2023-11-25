@@ -21,7 +21,7 @@ const tiers = [
       'Website Design',
       'Website Development',
     ],
-    price: 0,
+    price: 3500,
   },
 ];
 
