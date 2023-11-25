@@ -3,18 +3,18 @@ import { Link } from 'react-scroll';
 
 const tiers = [
   {
-    name: 'Starter',
-    id: 'tier-starter',
+    name: 'Design',
+    id: 'tier-design',
     href: '#',
-    description: 'The Starter Package',
+    description: 'The Design Package',
     features: ['Logo Design', 'Landing Page Design'],
     price: 1500,
   },
   {
-    name: 'Custom',
-    id: 'tier-Custom',
+    name: 'Design + Development',
+    id: 'tier-design-development',
     href: '#',
-    description: 'The Complete Package',
+    description: 'The Design + Development Package',
     features: [
       'Logo Design',
       'Landing Page Design',
